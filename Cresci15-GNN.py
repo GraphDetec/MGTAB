@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--relation_select', type=list, default=[0,1], help='selection of relations in the graph (0-6)')
+parser.add_argument('--relation_select', type=int, default=[0,1], nargs='+', help='selection of relations in the graph (0 1)')
 parser.add_argument('--model', type=str, default='GCN', help='GCN, GAT, GraphSage, RGCN, BotRGCN')
 parser.add_argument('--hidden_dimension', type=int, default=256, help='number of hidden units.')
 parser.add_argument('--dropout', type=float, default=0.3, help='number of hidden units.')
