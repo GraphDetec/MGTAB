@@ -13,8 +13,8 @@ from utils import sample_mask
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--models_list', type=list, default=[1,2,3,5], help='selection of classifiers')
-parser.add_argument('--random_seed', type=list, default=[1,2,3,4,5], help='selection of random seeds')
+parser.add_argument('--models_list', type=int, default=[1,2,3,5], nargs='+', help='selection of classifiers')
+parser.add_argument('--random_seed', type=int, default=[1,2,3,4,5], nargs='+', help='selection of random seeds')
 args = parser.parse_args()
 print(args)
 
