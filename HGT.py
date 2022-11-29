@@ -15,8 +15,8 @@ import numpy as np
 
 parser = argparse.ArgumentParser(description='HGT')
 parser.add_argument('--task', type=str, default='bot', help='detection task of stance or bot')
-parser.add_argument('--relation_select', type=list, default=[0,1], help='selection of relations in the graph (0-6).')
-parser.add_argument('--random_seed', type=list, default=[1,2,3,4,5], help='selection of random seeds')
+parser.add_argument('--relation_select', type=int, default=[0,1], nargs='+', help='selection of relations in the graph (0-6).')
+parser.add_argument('--random_seed', type=int, default=[1,2,3,4,5], nargs='+', help='selection of random seeds')
 parser.add_argument('--hidden_dimension', type=int, default=256, help="linear channels")
 parser.add_argument('--linear_channels', type=int, default=128, help="linear channels")
 parser.add_argument('--out_channel', type=int, default=32, help='output channels')
