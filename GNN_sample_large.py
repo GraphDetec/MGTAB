@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--task', type=str, default='stance', help='detection task of stance or bot')
-parser.add_argument('--relation_select', type=list, default=[0, 1], help='Selection of relations in the graph (0-6).')
+parser.add_argument('--relation_select', type=int, default=[0,1], nargs='+', help='Selection of relations in the graph (0-6).')
 parser.add_argument('--model', type=str, default='RGT', help='BotRGCN, GCN, GAT, SHGN')
 parser.add_argument('--GPU_num', type=int, default=1, help='numbers of GPUs used')
 parser.add_argument("--linear_channels", type=int, default=256, help="linear channels")
