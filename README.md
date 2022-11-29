@@ -120,6 +120,29 @@ torch-geometric 2.0.4
 pytorch-lightning 1.5.0
 ```
 
+## Train Model
+
+To start training process:
+
+Train GNN models
+```shell script
+python MGTAB-GNN.py  --task stance --model GCN --relation_select 0 1 --random_seed 0 1 2 3 4
+python MGTAB-GNN.py  --task bot --model RGCN --relation_select 0 1 --random_seed 0 1 2 3 4
+```
+
+Train Machine Learning models
+```shell script
+python MGTAB-ML.py  --task stance --models_list 1 2 3  --random_seed 0 1 2 3 4
+python MGTAB-ML.py  --task bot --models_list 4 5 6 7  --random_seed 0 1 2 3 4
+```
+
+Train GNN models parallel using multi-gpu
+```shell script
+python GNN_sample_large.py  --task bot --relation_select 0 1 2 3 4 4 6 --model RGT --GPU_num 4
+python GNN_sample_large.py  --task bot --relation_select 0 1 2 3 4 --model SHGN --GPU_num 4
+python GNN_sample_large.py  --task stance --relation_select 0 1 --model GCN --GPU_num 4
+python GNN_sample_large.py  --task stance --relation_select 0 --model GAT --GPU_num 4
+```
 
 ## Baseline performance
 ### Stance detection performance on MGTAB
