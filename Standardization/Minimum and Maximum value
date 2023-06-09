@@ -1,0 +1,49 @@
+Standardization for labeled data
+Minimum value
+followers_count              0.000000
+friends_count                0.000000
+listed_count                 0.000000
+created_at                  36.553529
+favourites_count             0.000000
+statuses_count               0.000000
+screen_name_length           3.000000
+name_length                  1.000000
+description_length           0.000000
+followers_friends_ratios     0.000000
+Maximum value
+followers_count              25.572674
+friends_count                21.029877
+listed_count                 17.675406
+created_at                   51.711108
+favourites_count             19.711042
+statuses_count               20.386231
+screen_name_length           15.000000
+name_length                  50.000000
+description_length          204.000000
+followers_friends_ratios     11.169299
+
+Standardization for unlabeled data
+Minimum value
+followers_count             0.0
+friends_count               0.0
+listed_count                0.0
+created_at                  0.0
+favourites_count            0.0
+statuses_count              0.0
+screen_name_length          2.0
+name_length                 0.0
+description_length          0.0
+followers_friends_ratios    0.0
+Maximum value
+followers_count              26.953860
+friends_count                22.000537
+listed_count                 17.765021
+created_at                   51.381446
+favourites_count             20.440885
+statuses_count               21.477959
+screen_name_length           15.000000
+name_length                  50.000000
+description_length          253.000000
+followers_friends_ratios     11.987264
+
+
